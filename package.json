@@ -1,0 +1,28 @@
+{
+  "name": "simple-url-shortener",
+  "version": "1.0.0",
+  "description": "This a simple URL shortener using Node.js, Express and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medihebfaiza/simple-url-shortener.git"
+  },
+  "author": "medihebfaiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/medihebfaiza/simple-url-shortener/issues"
+  },
+  "homepage": "https://github.com/medihebfaiza/simple-url-shortener#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

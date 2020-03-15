@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <title>URL Shortener</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1 class="title"> Simple URL Shortener</h1>
+                </div>
+                <div class="column">
+                    <form action="" method="POST">
+                        <input class="input" type="url" name="originalUrl" placeholder="URL" id="originalUrl">
+                        <button class="button is-primary" type="submit"> Shorten </button>
+                    </form>
+                </div>
+                <div class="column">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Original
+                                </th>
+                                <th>
+                                    Short
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.google.com/">https://www.google.com/</a>
+                                </td>
+                                <td>
+                                    <a href="/123456">shorturl</a>
+                                </td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
