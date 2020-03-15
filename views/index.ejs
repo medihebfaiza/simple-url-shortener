@@ -15,8 +15,8 @@
                     <h1 class="title"> Simple URL Shortener</h1>
                 </div>
                 <div class="column">
-                    <form action="" method="POST">
-                        <input class="input" type="url" name="originalUrl" placeholder="URL" id="originalUrl">
+                    <form action="/shorten" method="POST">
+                        <input class="input" type="url" name="original" placeholder="URL" id="original">
                         <button class="button is-primary" type="submit"> Shorten </button>
                     </form>
                 </div>
@@ -33,14 +33,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>
-                                    <a href="https://www.google.com/">https://www.google.com/</a>
-                                </td>
-                                <td>
-                                    <a href="/123456">shorturl</a>
-                                </td>    
-                            </tr>
+                            <% shortUrls.forEach(shortUrl => {%>
+                                <tr>
+                                    <td>
+                                        <a href="<% shortUrl.original %>"> <%= shortUrl.original %></a>
+                                    </td>
+                                    <td>
+                                        <a href="<% shortUrl.short %>"> <%= shortUrl.short %></a>
+                                    </td>    
+                                </tr>
+                            <% }) %>
                         </tbody>
                     </table>
                 </div>
